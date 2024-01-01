@@ -142,7 +142,7 @@
 					    
 				<div id="news-tab-content" class="tab-content">
 				
-					<div class="tab-pane active" id="2023"> 
+					<div class="tab-pane fade in active" id="2023"> 
 					<div class="news">
 				   	<ul id="ticker"> 
 				   		   		
@@ -174,7 +174,7 @@
 				   	</div>
 					</div>
 					
-					<div id="2022" class="tab-pane"> 
+					<div id="2022" class="tab-pane fade"> 
 					<div class="news">
 				   	<ul id="ticker"> 
 						<div class="col-md-12">
@@ -204,7 +204,7 @@
 				   	</div>
 					</div>
 					
-					<div class="tab-pane" id="2021"> 
+					<div class="tab-pane fade" id="2021"> 
 					<div class="news">
 				   	<ul id="ticker"> 
 				   		<li><h5>November</h5>
@@ -230,7 +230,7 @@
 				   	</div>
 					</div>
 					
-					<div class="tab-pane" id="2020"> 
+					<div class="tab-pane fade" id="2020"> 
 					<div class="news">
 				   	<ul id="ticker"> 
 				   		<li><h5>March</h5>
@@ -246,7 +246,7 @@
 				   	</div>
 					</div>
 										
-					<div class="tab-pane" id="2019"> 
+					<div class="tab-pane fade" id="2019"> 
 					<div class="news">
 				   	<ul id="ticker">
 				   		<li><h5>November</h5>
@@ -257,7 +257,7 @@
 				   	</div>
 					</div>
 					
-					<div class="tab-pane" id="2018"> 
+					<div class="tab-pane fade" id="2018"> 
 					<div class="news">
 				   	<ul id="ticker">
 				   			
@@ -501,6 +501,12 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="lib/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+	<script>
+		$('#new-tabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+	 </script>
 	<!--script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script-->
   </body>
 </html>
